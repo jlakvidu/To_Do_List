@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="523.0" prefWidth="477.0" style="-fx-background-color: #dff9fb;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddTaskFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="107.0" layoutX="29.0" layoutY="15.0" stroke="#7ea7ff" strokeLineCap="BUTT" strokeType="OUTSIDE" width="420.0">
+         <fill>
+            <LinearGradient endX="0.5000000072248054" endY="0.5795454468690988">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color green="0.5666666626930237" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.9426900744438171" green="0.9716958999633789" blue="0.9789473414421082" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="50.0" layoutX="32.0" layoutY="146.0" stroke="#7ea7ff" strokeLineCap="BUTT" strokeType="OUTSIDE" width="143.0">
+         <fill>
+            <LinearGradient endX="0.5000000072248054" endY="0.5795454468690988">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color green="0.5666666626930237" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.9426900744438171" green="0.9716958999633789" blue="0.9789473414421082" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <JFXButton layoutX="175.0" layoutY="472.0" onAction="#btnAddNewTaskOnAction" style="-fx-background-color: #4cd137;" text="Add new Task">
+         <font>
+            <Font name="Verdana Bold" size="14.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.5454545815785725" endY="1.0" startX="0.488636362733263" startY="0.5681818362438318">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color green="0.11666666716337204" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill></JFXButton>
+      <ListView fx:id="tastListView" layoutX="34.0" layoutY="211.0" prefHeight="240.0" prefWidth="410.0" />
+      <ImageView fitHeight="107.0" fitWidth="99.0" layoutX="35.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/pp2.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="334.0" layoutY="-289.0" text="Janith Lakvidu">
+         <font>
+            <Font name="Tw Cen MT Bold Italic" size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="178.0" layoutY="29.0" text="Janith Lakvidu">
+         <font>
+            <Font name="Tw Cen MT Bold" size="34.0" />
+         </font>
+      </Label>
+      <Label layoutX="186.0" layoutY="70.0" text="janithlakvidu@gmail.com" textFill="WHITE">
+         <font>
+            <Font name="Tw Cen MT" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="53.0" layoutY="153.0" text="To Do :">
+         <font>
+            <Font name="Tw Cen MT Bold" size="34.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.5075757936997847" endY="1.0" startX="0.5227272573745613" startY="0.9280303120613098">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color green="0.11666666716337204" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+   </children>
+</AnchorPane>

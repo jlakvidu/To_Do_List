@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="341.0" prefWidth="537.0" style="-fx-background-color: #dff9fb;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ViewTaskFormController">
+   <children>
+      <TableView fx:id="tblToDoList" layoutY="109.0" prefHeight="200.0" prefWidth="535.0" styleClass="dashboard-colour2" stylesheets="@../css/table.css">
+        <columns>
+          <TableColumn fx:id="colId" prefWidth="102.39997100830078" text="id" />
+          <TableColumn fx:id="colTitle" prefWidth="138.4000244140625" text="title" />
+            <TableColumn fx:id="colDescription" prefWidth="152.79998779296875" text="description" />
+            <TableColumn fx:id="colDate" prefWidth="148.79999389648435" text="Date" />
+        </columns>
+      </TableView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="52.0" layoutX="91.0" layoutY="27.0" stroke="#7ea7ff" strokeLineCap="BUTT" strokeType="OUTSIDE" width="355.0">
+         <fill>
+            <LinearGradient endX="0.5000000072248054" endY="0.5795454468690988">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color green="0.5666666626930237" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.9426900744438171" green="0.9716958999633789" blue="0.9789473414421082" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Label layoutX="113.0" layoutY="35.0" text="View Completed Tasks">
+         <font>
+            <Font name="Tw Cen MT Bold" size="34.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.5075757936997847" endY="1.0" startX="0.5227272573745613" startY="0.9280303120613098">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color green="0.11666666716337204" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+   </children>
+</AnchorPane>
